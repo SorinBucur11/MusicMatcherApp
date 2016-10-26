@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/compare"
+            android:icon="@drawable/ic_media_ff"
+            android:title="Compare Songs" />
+
+        <item
+            android:id="@+id/profile"
+            android:icon="@drawable/perm_group_personal_info"
+            android:title="My Profile" />
+
+        <item
+            android:id="@+id/song_list"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Song List" />
+
+        <item
+            android:id="@+id/upload"
+            android:icon="@drawable/ic_menu_upload"
+            android:title="Upload a Song" />
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_lock_power_off"
+            android:title="Log Out" />
+    </group>
+
+
+</menu>

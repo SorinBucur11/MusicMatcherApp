@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Music Matcher</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">About</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="register_title">Register</string>
+    <string name="login_title">Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="user">Username</string>
+    <string name="pwd">Password</string>
+    <string name="btnRegister">Create account</string>
+    <string name="btnLogin">Login</string>
+    <string name="btnLogout">Logout</string>
+    <string name="btnRecover">Recover Password</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_sample">SampleActivity</string>
+    <string name="title_activity_ceav">ceavActivity</string>
+</resources>

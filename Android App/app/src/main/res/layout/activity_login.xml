@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#66FFCC"    android:id="@+id/loginactivity"
+
+    tools:context="com.soundrecognition.musicmatcher.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/mmlogo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/loginUser"
+        android:hint="@string/user"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/loginPassword"
+        android:hint="@string/pwd"
+        android:inputType="textPassword"
+        android:layout_below="@+id/loginUser"
+        android:layout_alignEnd="@+id/loginUser"
+        android:layout_alignStart="@+id/loginUser" />
+
+    <TextView
+        android:id="@+id/login_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dip"
+        android:textColor="#FF8500"
+        android:textStyle="bold"
+        android:layout_below="@+id/loginPassword"
+        android:layout_alignEnd="@+id/loginPassword"
+        android:layout_alignStart="@+id/loginPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:id="@+id/btn_login"
+        android:text="@string/btnLogin"
+        android:background="#0033FF"
+        android:textColor="#fff"
+        android:onClick="loginUser"
+        android:layout_below="@+id/loginPassword"
+        android:layout_alignEnd="@+id/loginPassword"
+        android:layout_alignStart="@+id/login_error" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="navigatetoRegisterActivity"
+        android:text="No account yet? Create one"
+        android:gravity="center"
+        android:textSize="16dip"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/btn_login"
+        android:layout_alignStart="@+id/btn_login"
+        android:layout_alignEnd="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/recover_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:onClick="navigatetoRecoverPasswordActivity"
+        android:gravity="center"
+        android:textSize="16dip"
+        android:layout_below="@+id/register"
+        android:layout_marginTop="15dp"
+        android:layout_alignStart="@+id/register"
+        android:layout_alignEnd="@+id/register" />
+
+</RelativeLayout>

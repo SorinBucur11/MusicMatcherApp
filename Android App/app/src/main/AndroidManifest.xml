@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.soundrecognition.musicmatcher">
+     
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.MANAGE_DOCUMENTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FirstActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ResetPasswordActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="Compare Songs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="My Profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SongListActivity"
+            android:label="List of Songs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UploadSongActivity"
+            android:label="Upload"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutActivity"></activity>
+    </application>
+
+</manifest>

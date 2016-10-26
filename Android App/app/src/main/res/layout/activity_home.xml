@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66FFCC"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/song1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="Select first song"
+            android:textColor="#FF8500"
+            android:textStyle="bold"
+            android:textSize="15dip" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/spinner_song1"
+            android:layout_marginTop="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+        </Spinner>
+
+        <TextView
+            android:id="@+id/song2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:text="Select second song"
+            android:textColor="#FF8500"
+            android:textStyle="bold"
+            android:textSize="15dip" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/spinner_song2"
+            android:layout_marginTop="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+        </Spinner>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="330dp"
+            android:id="@+id/btn_compare"
+            android:text="Compare"
+            android:background="#0033FF"
+            android:textColor="#fff"
+            android:onClick="compareSongs"/>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="320dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="390dp"
+            android:gravity="center"
+            android:textColor="#FF8500"
+            android:textStyle="bold"
+            android:textSize="15dip" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/app_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_home"
+        app:menu="@menu/activity_home_drawer" />
+
+</android.support.v4.widget.DrawerLayout>
